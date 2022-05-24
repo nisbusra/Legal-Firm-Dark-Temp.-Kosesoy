@@ -19,11 +19,11 @@
         <!--Navbar-->        
             <nav class="flex justify-between items-center p-5 ">
                 <!--İkon-->            
-                <div class="">
-                    <img class="h-24 rounded-lg" src="Kosesoyamblemnavbar.png" alt="Kösesoy">
+                <div class=" ">
+                    <img class="h-14 md:h-24 rounded-lg" src="Kosesoyamblemnavbar.png" alt="Kösesoy">
                 </div>
                 <!--Top Pages-->
-                <div class="hidden sm:block justify-end">
+                <div class="hidden md:block justify-end">
                     <ul class="flex space-x-5 text-[#ffffff] text-lg bg-[#1a2451] p-5 rounded-lg bg-opacity-75">
                         <li>Anasayfa</li>
                         <li>Hakkımızda</li>
@@ -33,25 +33,262 @@
                         <li>İletişim</li>
                     </ul>
                 </div>
-                <div class="hidden lg:block"></div>
-                    <div><img class="bg-[#1a2451] p-5 rounded-lg bg-opacity-75 " src="/icons/navbar-toggler.png" alt="">
+                <div class="block md:hidden justify-end">
+                    <div>
+                        <img class="bg-[#1a2451] p-5 rounded-lg bg-opacity-75 " src="/icons/navbar-toggler.png" alt="">
                     </div>
+                </div>
 
             </nav>
             <!--Slogan/Gövde-->
-            <div class="">
-                <div class="flex justify-center items-center text-white">
-                    <h1 class="text-4xl font-[martel] shadow-lg">Önceliğimiz, sorunlarınızın çözümüdür.</h1>
+            <div class="my-40">
+                <!--Birinci bold cümle-->
+                <h1 class="text-4xl font-[martel] font-extrabold shadow-lg text-white text-center ">Önceliğimiz, sorunlarınızın çözümüdür.</h1>
+                <!--İkinci thin cümle-->
+                <div class="mx-10">
+                    <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Kösesoy, gerçek ve tüzel kişi müvekkillerine sunmuş olduğu hızlı, etkili, çözüm odaklı hukuki danışmanlık hizmetlerini yurtiçi ve yurtdışındaki gerçekleştirmektedir.</p>
                 </div>
-                <div class="flex justify-evenly items-center font-[montserrat]">
-                    <p class=" text-sm text-white ">Kösesoy, gerçek ve tüzel kişi müvekkillerine sunmuş olduğu hızlı, etkili, çözüm odaklı hukuki danışmanlık hizmetlerini yurtiçi ve yurtdışındaki gerçekleştirmektedir.</p>
+                <!--Daha Fazlası İçin-->
+                <div class="flex justify-center items-center mt-5">
+                    <span class="text-white bg-[#Ffbd4a] p-3 rounded-lg bg-opacity-75">
+                        <a href=""><!--Buraya hakkımıda kısmının linki koyulacak-->
+                            <button>Daha fazlası için...</button>
+                        </a>
+                    </span>
                 </div>
+            </div>
+        </div>
+    </header>
+    <!--Çalışma alanları kısmı-->
+    <div class="bg-[#1a2451] flex flex-col ">
+        <!--Başlık ve cümle-->
+        <div class="mt-24">
+            <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Çalışma Alanlarımız</h1>
+                <!--İkinci thin cümle-->
+            <div class="mx-10">
+                <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+            </div>
+        </div>
+        <!--Kutucuklar-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center justify-items-center items-center gap-3 my-24 mx-5">
+            <!--Birinci Kutucuk-->
+            <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff] ">
+                <div class="inline-flex items-center m-4">
+                    <div class="mr-3">
+                        <img src="/icons/sigortahukuku.png" alt="Sigorta Hukuku">
+                    </div>
+                    <div>
+                        <h3 class="font-[martel] font-bold">Sigorta Hukuku</h3>
+                    </div>
+
+                </div>
+                <div class="mx-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
+                </div>
+
+            </div>
+            <!--İkinci Kutucuk-->
+            <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff]">
+                <div class="inline-flex items-center m-4">
+                    <div class="mr-3">
+                        <img src="/icons/cezahukuku.png" alt="Ceza Hukuku">
+                    </div>
+                    <div>
+                        <h3 class="font-[martel] font-bold">Ceza Hukuku</h3>
+                    </div>
+                </div>
+                <div class="mx-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
+                </div>                    
+            </div>
+            <!--Üçüncü Kutucuk-->
+            <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff]">
+                <div class="inline-flex items-center m-4">
+                    <div class="mr-3">
+                        <img src="/icons/familylaw.png" alt="Aile Hukuku">
+                    </div >
+                    <div>
+                        <h3 class="font-[martel] font-bold">Aile Hukuku</h3>
+                    </div>
+                </div>
+                <div class="mx-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
+                </div>
+                
+            </div>
+            <!--Dördüncü Kutucuk-->
+            <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff]">
+                <div class="inline-flex items-center m-4">
+                    <div class="mr-3">
+                        <img class="" src="/icons/medenihukuk.png" alt="Medeni Hukuk">
+                    </div>
+                    <div>
+                        <h3 class="font-[martel] font-bold">Medeni Hukuk</h3>
+                    </div>
+                </div>
+                <div class="mx-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
+                </div>
+            </div>
+            <!--Beşinci Kutucuk-->
+            <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff]">
+                <div class="inline-flex items-center justify-center p-4">
+                    <div class="mr-3">
+                        <img src="/icons/businesslaw.png" alt="İş Hukuku">
+                    </div>
+                    <div>
+                        <h3 class="font-[martel] font-bold">İş Hukuku</h3>
+                    </div>
+                </div>
+                <div class="mx-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
+                </div>
+            </div>
+            <!--Altıncı Kutucuk-->
+            <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff]">
+                <div class="inline-flex items-center m-4">
+                    <div class="mr-3">
+                        <img src="/icons/gayrimenkul.png" alt="Gayrimenkul Hukuku">
+                    </div>
+                    <div class="flex text-center">
+                        <h3 class="font-[martel] font-bold">Gayrimenkul Hukuku</h3>
+                    </div>
+                </div>
+                <div class="mx-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
+                </div>
+            </div>    
+        </div>      
+    </div>
+    <!--ÜÇÜNCÜ BÖLÜM/BİZ KİMİZ-->
+    <div class="bg-[#1a2451] flex flex-col">
+        <!--Başlık ve Yazı-->        
+        <div class="mt-24">
+            <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Hakkımızda</h1>
+                <!--İkinci thin cümle-->
+            <div class="mx-10">
+                <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+            </div>
+        </div>        
+        <!--Hakkımızda kısmı için Carousel eklenecek-->
+        <div>
+
         </div>
     </div>
-    </header>
+    <!--DÖRDÜNCÜ BÖLÜM / MÜVEKKiLLERİMİZİN YORUMLARI-->
+    <div class="bg-[#1a2451] flex flex-col">
+        <div class="mt-24">
+            <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Müvekkillerimizin Düşünceleri</h1>
+                <!--İkinci thin cümle-->
+            <div class="mx-10">
+                <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+            </div>
+        </div>
+      
+        <!-- YORUMLAR -->
+        <div>
+            <!--Yorum 1-->
+        
+            <div class="lg:grid lg:grid-cols-3 lg:gap-x-2 pb-2 m-10 mx-20 space-y-3 lg:space-y-0 min-h-[360px]  ">
+                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md  ">
+                    <div class="mb-4 ">
+                        <p class="mb-2 text-center text-[#1a2451] ">
+                        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                        </p>
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                            <img src="https://cdn.pixabay.com/photo/2017/05/19/12/38/entrepreneur-2326419__340.jpg" alt="img"
+                                class="object-cover object-center w-full h-full" />
+                            </div>
+                            <h5 class="font-bold text-[#FFB742]">John Doe</h5>
+                            <p class="text-sm text-[#1a2451]">CEO / Founder</p>
+                    </div>
+                </div>
+            </div>
+            <!--Yorum 2-->
+            <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md ">
+                <div class="mb-4">
+                    <p class="mb-2 text-center text-[#ffffff] ">
+                        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                    </p>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                            <img src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg" alt="img"
+                                class="object-cover object-center w-full h-full" />
+                        </div>
+                        <h5 class="font-bold text-[#Ffbd4a]">michael james</h5>
+                        <p class="text-sm text-[#ffffff]">web developer</p>
+                    </div>
+                </div>
+            </div>
+            <!--Yorum 3-->
+            <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md bg-white">
+                <div class="mb-4">
+                    <p class="mb-2 text-center text-[#1a2451] ">
+                        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                    </p>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                            <img src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg" alt="img"
+                                class="object-cover object-center w-full h-full" />
+                        </div>
+                        <h5 class="font-bold text-[#Ffbd4a]">Camilla Mendes</h5>
+                        <p class="text-sm text-[#1a2451]">Web Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BEŞİNCİ BÖLÜM / Avukatlarımız-->
+    <div class="bg-[#1a2451] flex flex-col">
+        <!--Başlık-->
+        <div class="mt-16">
+            <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Kurucu Avukat</h1>
+        </div>
+        <!-- YORUMLAR -->
+        <div>
+            <!--Yorum 1-->
+            <div class="flex justify-center items-center pb-2 m-10 space-y-3 lg:space-y-0">
+                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md ">
+                    <div class="mb-4">                    
+                    <a href="">
+                        <img class="border-solid border-4 border-[#1a2451] p-1" src="/pictures/bunyamin-kosesoy.jpg" alt="">
+                    </a>   <!--Buraya hakkımızdakiler sayfasının linki eklenecek-->                
+                    <div class="flex flex-col items-center justify-center">
+                        <h5 class="font-bold text-[#Ffbd4a] my-5">Av. Bünyamin KÖSESOY</h5>
+                        <p class="text-sm text-[#1a2451]">Kurucu Avukat</p>
+                        <div class="inline-flex mt-4 space-x-4"><!--twitter ve instagram hesabı linkleri eklenecek-->
+                            <a href=""><img src="/icons/instagramlogo.png" alt="İnstagram"></a>
+                            <a href=""><img src="/icons/twitterlogo.png" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <!--ALTINCI BÖLÜM-->
+    <div class="bg-[#1a2451]">
+        <!--BLOG KISMINDAN ÖRNEKLER-->
+        <!--ÖRNEK 1-->
+        <div>
+            <article class="text-white">
+                <h2>Kiracının Tahliyesi</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel magnam expedita sunt cumque natus quidem nam distinctio ratione eos nobis earum porro similique saepe, rerum veritatis ut possimus obcaecati.</p>
+            </article>
+        </div>
+        <!--ÖRNEK 2-->
+        <div>
+            <article class="text-white">
+                <h2>İcra Takibi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta tempore aspernatur dolores totam fuga ipsa in voluptate suscipit, a officia voluptatem laboriosam iste nostrum porro optio, commodi eius perspiciatis.</p>
+            </article>
+
+        </div>
+
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
 
 
-<!-- text-[#Ffbd4a] -->
