@@ -17,6 +17,12 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    
-    
 }
+.swiper-button-prev{
+    color: #ffffff !important
+}
+
+.swiper-button-next{
+    color: #ffffff !important
+}
+

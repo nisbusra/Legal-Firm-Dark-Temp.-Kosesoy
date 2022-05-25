@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>Kösesoy Hukuk ve Danışmanlık</title>
 </head>
 <body>
@@ -20,20 +24,34 @@
             <nav class="flex justify-between items-center p-5 ">
                 <!--İkon-->            
                 <div class=" ">
-                    <img class="h-14 md:h-24 rounded-lg" src="Kosesoyamblemnavbar.png" alt="Kösesoy">
+                    <a href="/index.html">
+                        <img class="h-14 md:h-24 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300" src="Kosesoyamblemnavbar.png" alt="Kösesoy">
+                    </a>
                 </div>
                 <!--Top Pages-->
                 <div class="hidden md:block justify-end">
-                    <ul class="flex space-x-5 text-[#ffffff] text-lg bg-[#1a2451] p-5 rounded-lg bg-opacity-75">
-                        <li>Anasayfa</li>
-                        <li>Hakkımızda</li>
-                        <li>Çalışma Alanları</li>
-                        <li>Blog</li>
-                        <li>Ücret</li>
-                        <li>İletişim</li>
+                    <ul class="flex space-x-5 text-[#ffffff] text-base bg-[#1a2451] p-5 rounded-lg bg-opacity-75">
+                        <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                            <a href="/index.html">Anasayfa</a>
+                        </li>
+                        <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                            <a href="">Hakkımızda</a>
+                        </li>
+                        <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                            <a href="/practiseareas.html">Çalışma Alanları</a>
+                        </li>
+                        <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                            <a href="/blog.html">Blog</a>
+                        </li>
+                        <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                            <a href="/pricing.html">Ücret</a>
+                        </li>
+                        <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                            <a href="">İletişim</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="block md:hidden justify-end">
+                <div class="block md:hidden justify-end transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
                     <div>
                         <img class="bg-[#1a2451] p-5 rounded-lg bg-opacity-75 " src="/icons/navbar-toggler.png" alt="">
                     </div>
@@ -46,11 +64,11 @@
                 <h1 class="text-4xl font-[martel] font-extrabold shadow-lg text-white text-center ">Önceliğimiz, sorunlarınızın çözümüdür.</h1>
                 <!--İkinci thin cümle-->
                 <div class="mx-10">
-                    <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Kösesoy, gerçek ve tüzel kişi müvekkillerine sunmuş olduğu hızlı, etkili, çözüm odaklı hukuki danışmanlık hizmetlerini yurtiçi ve yurtdışındaki gerçekleştirmektedir.</p>
+                    <p class="flex justify-center text-sm text-white text-center mt-12 font-[montserrat] font-light max-w-[600px] mx-auto">Kösesoy, gerçek ve tüzel kişi müvekkillerine sunmuş olduğu hızlı, etkili, çözüm odaklı hukuki danışmanlık hizmetlerini yurtiçi ve yurtdışındaki gerçekleştirmektedir.</p>
                 </div>
                 <!--Daha Fazlası İçin-->
                 <div class="flex justify-center items-center mt-5">
-                    <span class="text-white bg-[#Ffbd4a] p-3 rounded-lg bg-opacity-75">
+                    <span class="text-white bg-[#Ffbd4a] p-3 rounded-lg bg-opacity-75 ring-1 hover:ring-[#fff] ring-offset-[#1a2451] opacity-60 hover:opacity-100">
                         <a href=""><!--Buraya hakkımıda kısmının linki koyulacak-->
                             <button>Daha fazlası için...</button>
                         </a>
@@ -66,11 +84,11 @@
             <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Çalışma Alanlarımız</h1>
                 <!--İkinci thin cümle-->
             <div class="mx-10">
-                <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+                <p class="flex justify-around text-base text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
             </div>
         </div>
         <!--Kutucuklar-->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center justify-items-center items-center gap-3 my-24 mx-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center items-center gap-3 my-16 mx-auto max-w-[1280px]">
             <!--Birinci Kutucuk-->
             <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff] ">
                 <div class="inline-flex items-center m-4">
@@ -113,8 +131,7 @@
                 </div>
                 <div class="mx-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
-                </div>
-                
+                </div>  
             </div>
             <!--Dördüncü Kutucuk-->
             <div class="bg-white border-solid border-2 w-80 h-40 border-[#Ffbd4a] rounded-md hover:shadow-xl cursor-pointer active:ring-1 active:ring-[#ffffff]">
@@ -158,39 +175,53 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum id sunt officiis! minima eligendi esse.</p>
                 </div>
             </div>    
+        </div>
+        <div class="flex justify-center items-center">
+            <span class="text-white bg-[#Ffbd4a] p-3 rounded-lg bg-opacity-75 ring-1 hover:ring-[#fff] ring-offset-[#1a2451]">
+                <a href="/practiseareas.html"><!--Buraya hakkımıda kısmının linki koyulacak-->
+                    <button>Daha fazlası için...</button>
+                </a>
+            </span>
         </div>      
     </div>
     <!--ÜÇÜNCÜ BÖLÜM/BİZ KİMİZ-->
-    <div class="bg-[#1a2451] flex flex-col">
+    <div class="bg-[#1a2451] flex flex-col space-y-3">
         <!--Başlık ve Yazı-->        
         <div class="mt-24">
-            <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Hakkımızda</h1>
+            <h1 class="text-4xl font-[martel] font-bold text-[#fff] text-center mx-4">Hakkımızda</h1>
                 <!--İkinci thin cümle-->
             <div class="mx-10">
-                <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+                <p class="flex justify-around text-base text-[#fff] text-center my-8 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+            </div>
+            <div class="block lg:flex lg:space-x-5 px-8 pb-14 max-w-[1100px] mx-auto">
+                <!--Resim-->
+                <div>
+                    <span>
+                        <img class="max-w-[500px] border-solid border-4 border-[#Ffbd4a] rounded-md shadow-md " src="/Kosesoyamblem.png" alt="Avukat">
+                    </span>
+                </div>
+                <!--Hakkımızda yazı içeriği-->
+                <div class="text-[#fff] lg:mx-4 font-[martel] font-extralight text-sm max-w-[500px] border-solid border-4 border-[#Ffbd4a] rounded-md shadow-md p-5 leading-10">
+                    <h2>Antalya’da faaliyet gösteren Kösesoy Hukuk ve Danışmanlık Bürosu, Bünyamin Kösesoy tarafından kurulmuş olup yurtiçi-yurtdışında birçok kurum ve kişiye hukuki konularda danışmanlık ve avukatlık hizmeti vermektedir. Kişisel hizmet ve ekip çalışması felsefesi, müvekkillerimizin hukuki meselelerinin etkin bir şekilde çözümünü sağlar.</h2>
+                </div>
             </div>
         </div>        
-        <!--Hakkımızda kısmı için Carousel eklenecek-->
-        <div>
-
-        </div>
     </div>
     <!--DÖRDÜNCÜ BÖLÜM / MÜVEKKiLLERİMİZİN YORUMLARI-->
     <div class="bg-[#1a2451] flex flex-col">
         <div class="mt-24">
             <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Müvekkillerimizin Düşünceleri</h1>
                 <!--İkinci thin cümle-->
-            <div class="mx-10">
-                <p class="flex justify-around text-sm text-white text-center mt-12 font-[montserrat] font-light">Profesyonel çözümler için yanınızdayız.</p>
+            <div class="mx-4">
+                <p class="flex justify-around text-base text-white text-center mt-12 font-[montserrat] font-light max-w-[600px] mx-auto">Müvekkillerimiz için gerçek değeri yaratmak, geliştirmek ve korumak için neyin gerekli olduğunu biliyoruz.</p>
             </div>
         </div>
       
         <!-- YORUMLAR -->
         <div>
             <!--Yorum 1-->
-        
-            <div class="lg:grid lg:grid-cols-3 lg:gap-x-2 pb-2 m-10 mx-20 space-y-3 lg:space-y-0 min-h-[360px]  ">
-                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md  ">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-x-2 pb-2 m-10 space-y-3 lg:space-y-0 max-w-[800px] mx-auto">
+                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md  mx-4 lg:mx-auto">
                     <div class="mb-4 ">
                         <p class="mb-2 text-center text-[#1a2451] ">
                         " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
@@ -202,41 +233,40 @@
                             </div>
                             <h5 class="font-bold text-[#FFB742]">John Doe</h5>
                             <p class="text-sm text-[#1a2451]">CEO / Founder</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             <!--Yorum 2-->
-            <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md ">
-                <div class="mb-4">
-                    <p class="mb-2 text-center text-[#ffffff] ">
-                        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
-                    </p>
-                    <div class="flex flex-col items-center justify-center">
-                        <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
-                            <img src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg" alt="img"
-                                class="object-cover object-center w-full h-full" />
+                <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md mx-4 lg:mx-auto">
+                    <div class="mb-4">
+                        <p class="mb-2 text-center text-[#ffffff] ">
+                            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                        </p>
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                                <img src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg" alt="img"
+                                    class="object-cover object-center w-full h-full" />
+                            </div>
+                            <h5 class="font-bold text-[#Ffbd4a]">michael james</h5>
+                            <p class="text-sm text-[#ffffff]">web developer</p>
                         </div>
-                        <h5 class="font-bold text-[#Ffbd4a]">michael james</h5>
-                        <p class="text-sm text-[#ffffff]">web developer</p>
                     </div>
                 </div>
-            </div>
             <!--Yorum 3-->
-            <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md bg-white">
-                <div class="mb-4">
-                    <p class="mb-2 text-center text-[#1a2451] ">
-                        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
-                    </p>
-                    <div class="flex flex-col items-center justify-center">
-                        <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
-                            <img src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg" alt="img"
-                                class="object-cover object-center w-full h-full" />
+                <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md bg-white mx-4 lg:mx-auto">
+                    <div class="mb-4">
+                        <p class="mb-2 text-center text-[#1a2451] ">" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                        </p>
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                                <img src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg" alt="img"
+                                    class="object-cover object-center w-full h-full" />
+                            </div>
+                            <h5 class="font-bold text-[#Ffbd4a]">Camilla Mendes</h5>
+                            <p class="text-sm text-[#1a2451]">Web Designer</p>
                         </div>
-                        <h5 class="font-bold text-[#Ffbd4a]">Camilla Mendes</h5>
-                        <p class="text-sm text-[#1a2451]">Web Designer</p>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     <!--BEŞİNCİ BÖLÜM / Avukatlarımız-->
@@ -245,49 +275,101 @@
         <div class="mt-16">
             <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Kurucu Avukat</h1>
         </div>
+
+    </div>
         <!-- YORUMLAR -->
-        <div>
+        <div class="flex">
             <!--Yorum 1-->
             <div class="flex justify-center items-center pb-2 m-10 space-y-3 lg:space-y-0">
                 <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md ">
                     <div class="mb-4">                    
-                    <a href="">
+                    <a href=""><!--Buraya hakkımızdakiler sayfasının linki eklenecek--> 
                         <img class="border-solid border-4 border-[#1a2451] p-1" src="/pictures/bunyamin-kosesoy.jpg" alt="">
-                    </a>   <!--Buraya hakkımızdakiler sayfasının linki eklenecek-->                
+                    </a>                  
                     <div class="flex flex-col items-center justify-center">
-                        <h5 class="font-bold text-[#Ffbd4a] my-5">Av. Bünyamin KÖSESOY</h5>
+                        <h5 class="font-bold text-[[#1a2451]] my-5">Av. Bünyamin KÖSESOY</h5>
                         <p class="text-sm text-[#1a2451]">Kurucu Avukat</p>
                         <div class="inline-flex mt-4 space-x-4"><!--twitter ve instagram hesabı linkleri eklenecek-->
-                            <a href=""><img src="/icons/instagramlogo.png" alt="İnstagram"></a>
+                            <a href=""><img src="/icons/icons8-instagram-24.png" alt="İnstagram"></a>
                             <a href=""><img src="/icons/twitterlogo.png" alt="Twitter"></a>
+                            <a href=""><img src="/icons/icons8-linkedin-24.png" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="text-white max-w-[600px]">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam deleniti, ad nobis reiciendis hic itaque? Autem, vitae quidem. Nam, minima illum. Reiciendis fugit quaerat molestias aspernatur, architecto sunt quis.
+            Quas labore qui, aspernatur minus illum obcaecati voluptatem provident odit nesciunt architecto. Similique, accusantium. Ab quas quis omnis, est tempore laboriosam odit commodi, odio sapiente, dicta amet accusamus ullam repellat!
+            Sit delectus inventore, odit asperiores exercitationem commodi minima aliquam explicabo voluptatum minus. Rem nesciunt maxime cupiditate ratione quia suscipit ad illo aliquam similique laborum error exercitationem, doloremque architecto sapiente cum!
+            Cupiditate quis sit mollitia dolores dolorum, est reiciendis ab sapiente nisi quia temporibus id dignissimos nesciunt odit obcaecati in quo minus quam, vero earum illo velit iusto quidem. Blanditiis, exercitationem.
+            Voluptatum deserunt molestias deleniti? Cum alias expedita earum tenetur totam dignissimos quisquam nobis maxime voluptas voluptatibus perferendis, eaque ipsa corporis nisi numquam quod quaerat possimus. Reprehenderit tenetur eos maxime numquam!
+            Quos autem iusto veniam? Eius corrupti amet, reprehenderit ducimus fugiat modi mollitia harum recusandae veniam nobis maxime voluptatem ratione sed aspernatur eaque deleniti itaque quo, fuga numquam eum? Molestias, debitis?</h2>
         </div>            
     </div>
     <!--ALTINCI BÖLÜM-->
     <div class="bg-[#1a2451]">
         <!--BLOG KISMINDAN ÖRNEKLER-->
-        <!--ÖRNEK 1-->
-        <div>
-            <article class="text-white">
-                <h2>Kiracının Tahliyesi</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel magnam expedita sunt cumque natus quidem nam distinctio ratione eos nobis earum porro similique saepe, rerum veritatis ut possimus obcaecati.</p>
-            </article>
+        <div class="mt-16">
+            <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Blog</h1>
+            <div class="mx-10">
+                <p class="flex justify-around text-base text-white text-center my-4 font-[montserrat] font-light">Güncel içeriklerle gelişmeleri yakından takip ediyoruz.</p>
+            </div>
         </div>
-        <!--ÖRNEK 2-->
-        <div>
-            <article class="text-white">
-                <h2>İcra Takibi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta tempore aspernatur dolores totam fuga ipsa in voluptate suscipit, a officia voluptatem laboriosam iste nostrum porro optio, commodi eius perspiciatis.</p>
-            </article>
-
+        <!--CAROUSEL-->
+        <div class="py-8 px-8 ">
+            <div class="swiper max-w-[1000px] max-h-[500px] mx-auto  overflow-x-hidden">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/pictures/booksinshelfs.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/pictures/booksonshelves.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/pictures/booksandstatue.jpg" alt=""></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>          
+        </div>
+        <!--Tümünü okumak için butonu-->
+        <div class="flex justify-center items-center ">
+            <span class="text-white bg-[#Ffbd4a] opacity-50 hover:opacity-100 p-2 rounded-lg bg-opacity-75 ring-1 hover:ring-[#fff] ring-offset-[#1a2451]">
+                <a href=""><!--Buraya hakkımıda kısmının linki koyulacak-->
+                    <button>Tümünü okumak için...</button>
+                </a>
+            </span>
         </div>
 
     </div>
+    <!--YEDİNCİ BÖLÜM / İLETİŞİM-->
+    <div>
+        <!--İletişim Bilgileri-->
+        <div>
+            <h1 class="text-4xl font-[martel] mt-10 font-bold text-white text-center ">İletişim</h1>
+        </div>
+        <div class="flex">
+            <div class="text-white">
+                <span>
+                    <img src="/Kosesoyamblemnavbar.png" alt="">
+                </span>
+                <h3 class="font-bold text-[#ffbd4a]">Telefon:<br></h3><a href="tel:+90 542 337 65 51">0 542 337 65 51</a>
+                <h3 class="font-bold text-[#ffbd4a]">Adres:</h3><Address>Deniz Mah. Konyaaltı Cad. Karabarut Apt, D:No:15/4, 07050 Muratpaşa/Antalya</Address>
+                <h3>E-posta</h3><E-posta><a href="mailto:bunyaminkosesoy@gmail.com">bunyaminkosesoy@gmail.com</a></E-posta>
 
+            </div>
+            <!--Harita-->
+            <div class="m-5 flex justify-center items-center">
+                <iframe class="max-h-[400px] max-w-[400px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.2102669110945!2d30.695136899999994!3d36.885317799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98bd231fa2e32bd8!2zS8O2c2Vzb3kgSHVrdWsgdmUgRGFuxLHFn21hbmzEsWsgQsO8cm9zdQ!5e0!3m2!1str!2str!4v1653433565599!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--SEKİNCİ BÖLÜM/FOOTER-->
+    <div>
+
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    
 </body>
 </html>
 
