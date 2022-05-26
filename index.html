@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <!--Birinci Bölüm-->
     <header class="">
         <!--Background Divi-->
-        <div class="showcase ">
+        <div class="showcase bg-[url('../pictures/booksandstatuedenim.jpg')]">
         <!--Navbar-->        
             <nav class="flex justify-between items-center p-5 ">
                 <!--İkon-->            
@@ -35,10 +35,10 @@
                             <a href="/index.html">Anasayfa</a>
                         </li>
                         <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <a href="">Hakkımızda</a>
+                            <a href="#Hakkımızda">Hakkımızda</a>
                         </li>
                         <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <a href="/practiseareas.html">Çalışma Alanları</a>
+                            <a href="#practiseAreas">Çalışma Alanları</a>
                         </li>
                         <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
                             <a href="/blog.html">Blog</a>
@@ -47,7 +47,7 @@
                             <a href="/pricing.html">Ücret</a>
                         </li>
                         <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                            <a href="">İletişim</a>
+                            <a href="#iletişim">İletişim</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +69,7 @@
                 <!--Daha Fazlası İçin-->
                 <div class="flex justify-center items-center mt-5">
                     <span class="text-white bg-[#Ffbd4a] p-3 rounded-lg bg-opacity-75 ring-1 hover:ring-[#fff] ring-offset-[#1a2451] opacity-60 hover:opacity-100">
-                        <a href=""><!--Buraya hakkımıda kısmının linki koyulacak-->
+                        <a href="#Hakkımızda"><!--Buraya hakkımıda kısmının linki koyulacak-->
                             <button>Daha fazlası için...</button>
                         </a>
                     </span>
@@ -78,7 +78,7 @@
         </div>
     </header>
     <!--Çalışma alanları kısmı-->
-    <div class="bg-[#1a2451] flex flex-col ">
+    <div class="bg-[#1a2451] flex flex-col " id="practiseAreas">
         <!--Başlık ve cümle-->
         <div class="mt-24">
             <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Çalışma Alanlarımız</h1>
@@ -185,7 +185,7 @@
         </div>      
     </div>
     <!--ÜÇÜNCÜ BÖLÜM/BİZ KİMİZ-->
-    <div class="bg-[#1a2451] flex flex-col space-y-3">
+    <div class="bg-[#1a2451] flex flex-col space-y-3" id="Hakkımızda">
         <!--Başlık ve Yazı-->        
         <div class="mt-24">
             <h1 class="text-4xl font-[martel] font-bold text-[#fff] text-center mx-4">Hakkımızda</h1>
@@ -197,12 +197,12 @@
                 <!--Resim-->
                 <div>
                     <span>
-                        <img class="max-w-[500px] border-solid border-4 border-[#Ffbd4a] rounded-md shadow-md " src="/Kosesoyamblem.png" alt="Avukat">
+                        <img class="lg:max-w-[500px] border-solid border-4 border-[#Ffbd4a] rounded-md shadow-md " src="/Kosesoyamblem.png" alt="Avukat">
                     </span>
                 </div>
                 <!--Hakkımızda yazı içeriği-->
                 <div class="text-[#fff] lg:mx-4 font-[martel] font-extralight text-sm max-w-[500px] border-solid border-4 border-[#Ffbd4a] rounded-md shadow-md p-5 leading-10">
-                    <h2>Antalya’da faaliyet gösteren Kösesoy Hukuk ve Danışmanlık Bürosu, Bünyamin Kösesoy tarafından kurulmuş olup yurtiçi-yurtdışında birçok kurum ve kişiye hukuki konularda danışmanlık ve avukatlık hizmeti vermektedir. Kişisel hizmet ve ekip çalışması felsefesi, müvekkillerimizin hukuki meselelerinin etkin bir şekilde çözümünü sağlar.</h2>
+                    <h2 class="text-justify">Antalya’da faaliyet gösteren Kösesoy Hukuk ve Danışmanlık Bürosu, Bünyamin Kösesoy tarafından kurulmuş olup yurtiçi-yurtdışında birçok kurum ve kişiye hukuki konularda danışmanlık ve avukatlık hizmeti vermektedir. Kişisel hizmet ve ekip çalışması felsefesi, müvekkillerimizin hukuki meselelerinin etkin bir şekilde çözümünü sağlar.</h2>
                 </div>
             </div>
         </div>        
@@ -220,8 +220,8 @@
         <!-- YORUMLAR -->
         <div>
             <!--Yorum 1-->
-            <div class="lg:grid lg:grid-cols-3 lg:gap-x-2 pb-2 m-10 space-y-3 lg:space-y-0 max-w-[800px] mx-auto">
-                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md  mx-4 lg:mx-auto">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-x-2 pb-2 m-10 space-y-3 lg:space-y-0 max-w-[800px] mx-auto ">
+                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md  mx-4 lg:mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
                     <div class="mb-4 ">
                         <p class="mb-2 text-center text-[#1a2451] ">
                         " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
@@ -237,7 +237,7 @@
                     </div>
                 </div>
             <!--Yorum 2-->
-                <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md mx-4 lg:mx-auto">
+                <div class="p-4 text-gray-800 bg-[#1a2451] border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md mx-4 lg:mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
                     <div class="mb-4">
                         <p class="mb-2 text-center text-[#ffffff] ">
                             " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
@@ -253,7 +253,7 @@
                     </div>
                 </div>
             <!--Yorum 3-->
-                <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md bg-white mx-4 lg:mx-auto">
+                <div class="p-4 text-gray-800 border-solid border-2 border-[#Ffbd4a] rounded-md shadow-md bg-white mx-4 lg:mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
                     <div class="mb-4">
                         <p class="mb-2 text-center text-[#1a2451] ">" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
                         </p>
@@ -270,20 +270,20 @@
         </div>
     </div>
     <!--BEŞİNCİ BÖLÜM / Avukatlarımız-->
-    <div class="bg-[#1a2451] flex flex-col">
+    <div class="bg-[#1a2451] ">
         <!--Başlık-->
-        <div class="mt-16">
+        <div class="mt-16 flex justify-center items-center">
             <h1 class="text-4xl font-[martel] font-bold text-white text-center ">Kurucu Avukat</h1>
         </div>
 
     </div>
-        <!-- YORUMLAR -->
-        <div class="flex">
+        <!-- Avukat-->
+        <div class="block lg:flex">
             <!--Yorum 1-->
-            <div class="flex justify-center items-center pb-2 m-10 space-y-3 lg:space-y-0">
-                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md ">
+            <div class="flex justify-center items-center pb-2 m-4 p-4 space-y-3 lg:space-y-0 min-w-[300px] mx-auto">
+                <div class="p-4 text-gray-800 shadow-md bg-white border-solid border-2 border-[#Ffbd4a] rounded-md  ">
                     <div class="mb-4">                    
-                    <a href=""><!--Buraya hakkımızdakiler sayfasının linki eklenecek--> 
+                    <a href="#Hakkımızda"><!--Buraya hakkımızdakiler sayfasının linki eklenecek--> 
                         <img class="border-solid border-4 border-[#1a2451] p-1" src="/pictures/bunyamin-kosesoy.jpg" alt="">
                     </a>                  
                     <div class="flex flex-col items-center justify-center">
@@ -292,19 +292,18 @@
                         <div class="inline-flex mt-4 space-x-4"><!--twitter ve instagram hesabı linkleri eklenecek-->
                             <a href=""><img src="/icons/icons8-instagram-24.png" alt="İnstagram"></a>
                             <a href=""><img src="/icons/twitterlogo.png" alt="Twitter"></a>
-                            <a href=""><img src="/icons/icons8-linkedin-24.png" alt="LinkedIn"></a>
+                            <a href="https://www.linkedin.com/in/bunyaminkosesoy/"><img src="/icons/icons8-linkedin-24.png" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-white max-w-[600px]">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam deleniti, ad nobis reiciendis hic itaque? Autem, vitae quidem. Nam, minima illum. Reiciendis fugit quaerat molestias aspernatur, architecto sunt quis.
+        <div class="flex flex-col justify-center items-center text-white px-10 min-w-[340px] lg:min-w-0 mx-auto">
+            <h1 class="inline-flex text-left font-bold font-[martel] m-5">Av. Bünyamin KÖSESOY</h1>
+            <h2 class="text-justify leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam deleniti, ad nobis reiciendis hic itaque? Autem, vitae quidem. Nam, minima illum. Reiciendis fugit quaerat molestias aspernatur, architecto sunt quis.
             Quas labore qui, aspernatur minus illum obcaecati voluptatem provident odit nesciunt architecto. Similique, accusantium. Ab quas quis omnis, est tempore laboriosam odit commodi, odio sapiente, dicta amet accusamus ullam repellat!
             Sit delectus inventore, odit asperiores exercitationem commodi minima aliquam explicabo voluptatum minus. Rem nesciunt maxime cupiditate ratione quia suscipit ad illo aliquam similique laborum error exercitationem, doloremque architecto sapiente cum!
-            Cupiditate quis sit mollitia dolores dolorum, est reiciendis ab sapiente nisi quia temporibus id dignissimos nesciunt odit obcaecati in quo minus quam, vero earum illo velit iusto quidem. Blanditiis, exercitationem.
-            Voluptatum deserunt molestias deleniti? Cum alias expedita earum tenetur totam dignissimos quisquam nobis maxime voluptas voluptatibus perferendis, eaque ipsa corporis nisi numquam quod quaerat possimus. Reprehenderit tenetur eos maxime numquam!
-            Quos autem iusto veniam? Eius corrupti amet, reprehenderit ducimus fugiat modi mollitia harum recusandae veniam nobis maxime voluptatem ratione sed aspernatur eaque deleniti itaque quo, fuga numquam eum? Molestias, debitis?</h2>
+            </h2>
         </div>            
     </div>
     <!--ALTINCI BÖLÜM-->
@@ -342,31 +341,93 @@
 
     </div>
     <!--YEDİNCİ BÖLÜM / İLETİŞİM-->
-    <div>
-        <!--İletişim Bilgileri-->
+    <div id="iletişim" class="my-5 p-4">
+        <!--İletişim Başlığı-->
         <div>
-            <h1 class="text-4xl font-[martel] mt-10 font-bold text-white text-center ">İletişim</h1>
+            <h1 class="text-4xl font-[martel] my-14 font-bold text-white text-center ">İletişim</h1>
         </div>
-        <div class="flex">
-            <div class="text-white">
-                <span>
-                    <img src="/Kosesoyamblemnavbar.png" alt="">
-                </span>
-                <h3 class="font-bold text-[#ffbd4a]">Telefon:<br></h3><a href="tel:+90 542 337 65 51">0 542 337 65 51</a>
-                <h3 class="font-bold text-[#ffbd4a]">Adres:</h3><Address>Deniz Mah. Konyaaltı Cad. Karabarut Apt, D:No:15/4, 07050 Muratpaşa/Antalya</Address>
-                <h3>E-posta</h3><E-posta><a href="mailto:bunyaminkosesoy@gmail.com">bunyaminkosesoy@gmail.com</a></E-posta>
-
+        <!--İletişim Bilgileri ve Harita-->
+        <div class="block lg:flex">
+            <!--İletişim Bilgileri-->
+            <div class="flex justify-center items-center m-4  min-w-[300px] max-w-[500px] mx-auto">
+                <div class="text-white">
+                    <h1 class=" justify-start font-bold text-3xl my-2">
+                        ANTALYA OFİSİ
+                    </h1><br>
+                    <div><h2 class="font-bold text-[#ffbd4a] text-lg">Bize Danışmak için:</h2></div>
+                    <div class="my-5">
+                        <h3 class="font-bold text-[#ffbd4a] text-lg">Telefon:<br></h3>
+                        <a href="tel:+90 542 337 65 51">0 542 337 65 51</a>
+                    </div>
+                    <div class="my-5">
+                    <h3 class="font-bold text-[#ffbd4a] text-lg">Adres:</h3>
+                        <Address>Deniz Mah. Konyaaltı Cad. Karabarut Apt, D:No:15/4, 07050 Muratpaşa/Antalya</Address>
+                    </div>
+                    <div class="my-5">
+                    <h3 class="font-bold text-[#ffbd4a] text-lg">E-posta</h3>
+                        <E-posta>
+                            <a href="mailto:bunyaminkosesoy@gmail.com">bunyaminkosesoy@gmail.com</a>
+                        </E-posta>
+                    </div>
+                    <h3 class="font-bold text-[#ffbd4a] text-lg">Çalışma Saatleri</h3>
+                    <p>Pazartesi-Cuma: 08:30 - 18:00 <br>Cumartesi: 10:00 - 14:00</p>
+                </div>
             </div>
             <!--Harita-->
-            <div class="m-5 flex justify-center items-center">
-                <iframe class="max-h-[400px] max-w-[400px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.2102669110945!2d30.695136899999994!3d36.885317799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98bd231fa2e32bd8!2zS8O2c2Vzb3kgSHVrdWsgdmUgRGFuxLHFn21hbmzEsWsgQsO8cm9zdQ!5e0!3m2!1str!2str!4v1653433565599!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="m-5 my-8 flex  lg:max-h-[400px] lg:max-w-[500px] mx-auto justify-center items-center justify-items-center">
+                <iframe class="m-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.2102669110945!2d30.695136899999994!3d36.885317799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98bd231fa2e32bd8!2zS8O2c2Vzb3kgSHVrdWsgdmUgRGFuxLHFn21hbmzEsWsgQsO8cm9zdQ!5e0!3m2!1str!2str!4v1653433565599!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
     <!--SEKİNCİ BÖLÜM/FOOTER-->
-    <div>
-
-    </div>
+    <footer class="p-5 mx-5">
+        <div><div class="w-full border-t border-gray-300"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <!--Birinci sütun-->
+            <div class="w-4/13 py-5">
+                <div class="text-[#fff] font-bold text-3xl">
+                    Av. Bünyamin <br> KÖSESOY<br>
+                    <span class="text-[#ffbd4a] py-5 text-sm">Antalya Barosu </span>
+                </div>
+                
+            </div>
+            <!--İkinci Sütun-->
+            <div class="w-3/13">
+                <div class="text-white font-semibold py-5 ">
+                    Faydalı Linkler
+                </div>
+                <div>
+                    <ul class="text-[#c3c5cc] font-normal leading-7">
+                        <li><a href="/index.html">Anasayfa</a></li>
+                        <li><a href="#Hakkımızda">Hakkımızda</a></li>
+                        <li><a href="#practiseAreas">Çalışma Alanları</a></li>
+                        <li><a href="/pricing.html">Ücret</a></li>
+                        <li><a href="#iletişim">İletişim</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+            <!--Üçüncü Sütun-->
+            <div>
+                <div class="text-white font-semibold py-5">Sosyal Medya</div>
+                <div>
+                    <ul class="text-[#c3c5cc] font-normal leading-7">
+                        <li><a>Blog</a></li>
+                        <li><a>İnstagram</a></li>
+                        <li><a>Linkedin</a></li>
+                        <li><a>Twitter</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+            <!--dördüncü Sütun-->
+            <div>
+                <div class="py-5 inline-flex">
+                    <img class="border-solid border-2 border-white rounded-md shadow-md" src="/Kosesoyamblemnavbar.png" alt=""> 
+                </div>    
+            </div>
+        </div>     
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     

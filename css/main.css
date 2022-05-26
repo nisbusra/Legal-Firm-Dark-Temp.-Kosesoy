@@ -11,12 +11,11 @@ html{
     scroll-behavior: smooth;
 }
 
-body {
+body{
     margin: 0;
     height: 100vh;
 }
 .showcase{
-    background-image: url('../pictures/booksandstatuedenim.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -29,3 +28,6 @@ body {
     color: #ffffff !important
 }
 
+#more {
+    display: none;
+}
