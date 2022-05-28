@@ -28,6 +28,8 @@ body{
     color: #ffffff !important
 }
 
-#more {
+.readMoreText{
     display: none;
 }
+
+

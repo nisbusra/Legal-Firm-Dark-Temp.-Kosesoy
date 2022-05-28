@@ -20,6 +20,6 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
-  
 
- 
+
+const menuItems= document.querySelectorAll('Menu.Items')
