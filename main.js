@@ -1,25 +1,19 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+
+// function dropping(ev) {
+//   let content=document.querySelector('.dropdown-content')
+//   if (content.classList.contains("hidden")) {
+//     content.classList.remove("hidden");
+//     content.classList.add("block");
+//   } else {
+//     content.classList.add("hidden")
+//   }
+   
+// }
 
 
-const menuItems= document.querySelectorAll('Menu.Items')
+
+function dropping(ev) {
+    document.querySelector('.dropdown-content').classList.toggle("hidden")
+   
+     
+  }

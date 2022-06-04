@@ -52,48 +52,50 @@
                     </ul>
                 </div>
                 <div class="block md:hidden justify-end ">
-                    <div>
-                        <Menu as="div" class="Menu relative inline-block text-left ">
+                    <div class="relative inline-block dropdown">
+                        <div class=" relative inline-block text-left ">
                             <div>
-                                <Menu.Button class="Menu.Button inline-flex w-full justify-center rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                <button class="dropbtn inline-flex w-full justify-center rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300" onclick="dropping()">
                                     <img class="bg-[#1a2451] p-5 rounded-lg bg-opacity-75 " src="/icons/navbar-toggler.png" alt="">
-                                </Menu.Button>
+                                </button>
                             </div>
-                            <Menu.Items class="Menu.Items absolute right-0 mt-2 w-40 py-2 origin-top-right divide-y divide-gray-100 rounded-md bg-white bg-opacity-70 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div className="px-2 py-2">
-                                    <Menu.Item class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                        <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
-                                            <a href="/index.html">Anasayfa</a>
-                                        </button>
-                                    </Menu.Item>
-                                    <Menu.Item class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                        <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
-                                            <a href="/index.html#Hakkımızda">Hakkımızda</a>
-                                        </button>
-                                    </Menu.Item>
-                                    <Menu.Item class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                        <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
-                                            <a href="/practiseareas.html">Çalışma Alanları</a>
-                                        </button>
-                                    </Menu.Item>
-                                    <Menu.Item class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                        <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
-                                            <a href="/blog.html">Blog</a>
-                                        </button>
-                                    </Menu.Item>
-                                    <Menu.Item class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                        <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
-                                            <a href="/pricing.html">Ücret</a>
-                                        </button>
-                                    </Menu.Item>
-                                    <Menu.Item class="Menu.Item flex justify-end items-center bg-center p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
-                                        <button class="Button p-1 mr-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
-                                            <a href="/index.html#iletişim">İletişim</a>
-                                        </button>
-                                    </Menu.Item>
+                            <div class="z-20  hidden dropdown-content ">
+                                <div class="absolute right-0 mt-2 w-40 py-2 origin-top-right divide-y divide-gray-100 rounded-md bg-white bg-opacity-70 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="px-2 py-2">
+                                        <div class=" flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                            <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
+                                                <a href="/index.html">Anasayfa</a>
+                                            </button>
+                                        </div>
+                                        <div class=" flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                            <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
+                                                <a href="/index.html#Hakkımızda">Hakkımızda</a>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                            <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
+                                                <a href="/practiseareas.html">Çalışma Alanları</a>
+                                            </button>
+                                        </div>
+                                        <div class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                            <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
+                                                <a href="/blog.html">Blog</a>
+                                            </button>
+                                        </div>
+                                        <div class="Menu.Item flex justify-end items-center bg-center p-2 mr-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                            <button class="Button p-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
+                                                <a href="/pricing.html">Ücret</a>
+                                            </button>
+                                        </div>
+                                        <div class="Menu.Item flex justify-end items-center bg-center p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300">
+                                            <button class="Button p-1 mr-1 rounded-md hover:bg-yellow-400 active:bg-yellow-500 ">
+                                                <a href="/index.html#iletişim">İletişim</a>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </Menu.Items>
-                        </Menu>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -218,7 +220,7 @@
         </div>
         <div class="flex justify-center items-center">
             <span class="text-white bg-[#Ffbd4a] p-3 rounded-lg bg-opacity-75 ring-1 hover:ring-[#fff] ring-offset-[#1a2451]">
-                <a href="/practiseareas.html"><!--Buraya hakkımıda kısmının linki koyulacak-->
+                <a href="/practiseareas.html">
                     <button>Daha fazlası için...</button>
                 </a>
             </span>
@@ -227,7 +229,7 @@
     <!--ÜÇÜNCÜ BÖLÜM/BİZ KİMİZ-->
     <div class="bg-[#1a2451] flex flex-col lg:space-y-3" id="Hakkımızda">
         <!--Başlık ve Yazı-->        
-        <div class="mt-24">
+        <div class="mt-20 mb-5">
             <h1 class="text-4xl font-[martel] font-bold text-[#fff] text-center mx-4">Hakkımızda</h1>
                 <!--İkinci thin cümle-->
             <div class="mx-10">
@@ -475,6 +477,7 @@
         </div>     
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="indexmain.js"></script>
     <script src="main.js"></script>
     
 </body>
